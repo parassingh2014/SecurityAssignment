@@ -13,6 +13,11 @@ namespace BAIS3110_ASPLab.Pages
         private readonly ILogger<IndexModel> _logger;
         public DateTime Message { get; set; }
         public string Name { get; set; }
+        List<String> abc = new List<string>()
+        {
+            "Raman",
+            "Raman"
+        };
 
         [BindProperty]
         public string InputTextBox { get; set; }
@@ -23,9 +28,6 @@ namespace BAIS3110_ASPLab.Pages
 
         public void OnGet()
         {
-            
-
-
             for (var i = 0; i<=5; i++)
             {
                 Name = "Raman";
